@@ -1,0 +1,96 @@
+#Root = planet
+#This = country
+can_release_vassal = {
+	# custom_tooltip = {
+	# 	fail_text = default
+	# 	NOT = { has_valid_civic = civic_fanatic_purifiers }
+	# }
+	# custom_tooltip = {
+	# 	fail_text = default
+	# 	NOT = { has_valid_civic = civic_machine_terminator }
+	# }
+	# custom_tooltip = {
+	# 	fail_text = default
+	# 	NOT = { has_valid_civic = civic_machine_assimilator }
+	# }
+	# custom_tooltip = {
+	# 	fail_text = default
+	# 	NOT = { has_valid_civic = civic_hive_devouring_swarm }
+	# }
+}
+
+# This = country
+can_use_galactic_market = {
+	is_country_type = default
+	# NOR = {
+	# 	has_civic = civic_fanatic_purifiers
+	# 	has_civic = civic_hive_devouring_swarm
+	# 	has_civic = civic_machine_terminator
+	# }
+}
+
+# This = country
+can_be_part_of_galactic_community = {
+	custom_tooltip = {
+		fail_text = "community_default_failtext"
+		is_country_type = default
+	}
+	# custom_tooltip = {
+	# 	fail_text = "community_homicidal_failtext"
+	# 	NOR = {
+	# 		has_civic = civic_fanatic_purifiers
+	# 		has_civic = civic_hive_devouring_swarm
+	# 		has_civic = civic_machine_terminator
+	# 	}
+	# }
+	custom_tooltip = {
+		fail_text = "community_declared_crisis_failtext"
+		has_been_declared_crisis = no
+	}
+	custom_tooltip = {
+		fail_text = "community_declared_crisis_failtext"
+		#fail_text = "community_overlord_declared_crisis_failtext"
+		OR = {
+			NOT = { exists = overlord }
+			overlord = { has_been_declared_crisis = no }
+		}
+	}
+}
+
+# This = country
+can_be_part_of_galactic_empire = {
+	custom_tooltip = {
+		fail_text = "community_default_failtext"
+		is_country_type = default
+	}
+	# custom_tooltip = {
+	# 	fail_text = "community_homicidal_failtext"
+	# 	NOR = {
+	# 		has_civic = civic_fanatic_purifiers
+	# 		has_civic = civic_hive_devouring_swarm
+	# 		has_civic = civic_machine_terminator
+	# 	}
+	# }
+	custom_tooltip = {
+		fail_text = "community_declared_crisis_failtext"
+		has_been_declared_crisis = no
+	}
+	custom_tooltip = {
+		fail_text = "community_declared_crisis_failtext"
+		#fail_text = "community_overlord_declared_crisis_failtext"
+		OR = {
+			NOT = { exists = overlord }
+			overlord = { has_been_declared_crisis = no }
+		}
+	}
+}
+
+# This = country
+can_be_part_of_galactic_council = {
+	is_country_type = default
+	# NOR = {
+	# 	has_civic = civic_fanatic_purifiers
+	# 	has_civic = civic_hive_devouring_swarm
+	# 	has_civic = civic_machine_terminator
+	# }
+}
