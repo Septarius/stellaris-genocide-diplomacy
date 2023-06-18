@@ -1,6 +1,7 @@
 #Root = planet
 #This = country
 can_release_vassal = {
+	always = yes
 	# custom_tooltip = {
 	# 	fail_text = default
 	# 	NOT = { has_valid_civic = civic_fanatic_purifiers }

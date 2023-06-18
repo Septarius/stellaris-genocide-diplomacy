@@ -2505,7 +2505,6 @@ action_pledge_secret_fealty = {
 	}
 }
 
-
 action_propose_secret_fealty = {
 	icon = "GFX_diplomacy_status_secret_fealty"
 	auto_accepted = no
